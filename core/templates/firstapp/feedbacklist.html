@@ -1,0 +1,22 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>This is a Reading functionality</h1>
+        <br>
+        {% if stud_list %}
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Marks</th>
+            </thead>
+            {% for stud in stud_list %}
+            <tr>
+            <td>{{stud.name}}</td>
+            <td>{{stud.marks}}</td>
+            </tr>
+            {% endfor %}
+        <table>
+        {% endif %}
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Update Form</title>
+    </head>
+    <body>
+    <h1>Employee Update Form</h1>
+    <form method='POST'>
+        {% csrf_token%}
+        ID:<input type="text" name="" value="{{emp.id}}"><br>
+        Name:<input type="text" name="" value="{{emp.name}}"><br>
+        Salary:<input type="text" name="" value="{{emp.salary}}"><br>
+        Address:<input type="text" name="" value="{{emp.address}}"><br>
+        <input type="Submit" name="" value="Update Employee">
+    </form>
+    <a href="/emp">Add Employee</a><br>
+    </body> 
+</html>

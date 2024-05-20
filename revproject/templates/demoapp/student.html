@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Student Page</title>
+    </head>
+    <body>
+        <h1>This is Student page</h1>
+        {% if stud_list%}
+        <table>
+            <thead>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Student Marks</th>
+            </thead>
+            {% for stud in stud_list%}
+            <tr>
+                <td>{{stud.id}}</td>
+                <td>{{stud.name}}</td>
+                <td>{{stud.marks}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif%}
+
+    </body>
+</html>

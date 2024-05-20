@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Student Form Page</title>
+    </head>
+    <body>
+        <h1>This is a Student Registration Page</h1>
+        <h2>{{datetime}}</h2>
+        <form method = "POST">
+            {{form}}
+            {% csrf_token %}
+            <button type="submit">Submit</button>
+        </form>
+        <a href='/demoapp/stud_view'>Welcome Page</a>
+    </body>
+</html>

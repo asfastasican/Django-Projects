@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Ret</title>
+    </head>
+    <body>
+        {% if emp %}
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Address</th>
+            </thead>
+            {% for emp in emp %}
+            <tr>
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.salary}}</td>
+                <td>{{emp.address}}</td>
+            </tr>   
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>No Data found</p>
+        {% endif %}
+    </body> 
+</html>

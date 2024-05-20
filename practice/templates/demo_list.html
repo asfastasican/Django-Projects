@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Demo_list</title>
+  </head>
+  <body>
+    <h1>Student list </h1>
+    {% if stud_list %}
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>City</th>
+        </thead>
+        {% for stud in stud_list %}
+        <tr>
+        <td>{{stud.id}}</td>
+        <td>{{stud.Name}}</td>
+        <td>{{stud.Roll}}</td>
+        <td>{{stud.City}}</td>
+        </tr>
+        {% endfor%}
+ </table>
+ {%endif%}
+ </body>
+</html>

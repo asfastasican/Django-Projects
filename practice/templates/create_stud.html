@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Demo_list</title>
+  </head>
+  <body>
+    <h1>Student Creation</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <br>
+        <input type="Submit" name="" value="Submit"><br>
+    </form>
+  
+ </body>
+</html>
